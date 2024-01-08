@@ -143,3 +143,11 @@ function touchStarted()
 
   }
 }
+
+function touchMoved() {
+  return false;
+}
+
+function touchEnded() {
+  return false;
+}
