@@ -75,7 +75,7 @@ function calculate() {
 let last;
 
 function setup() {
-  createCanvas(grid_columns * cell_size, grid_rows * cell_size+30);
+  createCanvas(windowWidth, windowHeight);
 }
 
 
@@ -126,6 +126,9 @@ function keyPressed()
   {
     playing=false;
   }
+}
 
-
+function touchStarted()
+{
+  if (!playing) playing=true;
 }
