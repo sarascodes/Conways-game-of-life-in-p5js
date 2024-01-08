@@ -130,5 +130,16 @@ function keyPressed()
 
 function touchStarted()
 {
-  if (!playing) playing=true;
+  if (!playing) 
+  {
+    playing=true;
+    for (let x = 0; x < grid_columns; x++) {
+      grid[x] = [];
+      for (let y = 0; y < grid_rows; y++) {
+        if (random(0, 100) > 50) grid[x][y] = true; else grid[x][y] = false;
+      }
+    }
+    last = millis();
+
+  }
 }
