@@ -92,7 +92,7 @@ function draw() {
     textSize(20);
     fill(GRAY_COLOR);
 
-    message = "Press SPACE to start (need keyboard :()"
+    message = "Press SPACE to start (need keyboard)"
     text(message, width / 2 - textWidth(message) / 2, height / 2+40);
     pop();
   } else {
